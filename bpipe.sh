@@ -7,14 +7,13 @@
 #  $ ron -5 man/rip.5.ron | browser   
 
 case $(uname) in
-	Darwin)
-		OPEN="open"
-		;;
-	*)
-		OPEN="xdg-open"
-		;;
+  Darwin)
+    OPEN="open"
+    ;;
+  *)
+    OPEN="xdg-open"
+    ;;
 esac
-
 
 if [ -t 0 ]; then
   if [ -n "$1" ]; then
